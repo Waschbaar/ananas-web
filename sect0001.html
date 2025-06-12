@@ -12,8 +12,8 @@
 <meta name="generator" content="plasTeX" />
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>homological algebra conventions</title>
-<link rel="next" href="sect0002.html" title="test some references" />
+<title>Condensed formalism</title>
+<link rel="next" href="sect0002.html" title="Bibliography" />
 <link rel="prev" href="index.html" title="Analytic Stacks Project" />
 <link rel="up" href="index.html" title="Analytic Stacks Project" />
 <link rel="stylesheet" href="styles/theme-white.css" />
@@ -33,18 +33,15 @@
 <nav class="toc">
 <ul class="sub-toc-0">
 <li class=" active current">
-  <a href="sect0001.html"><span class="toc_ref">1</span> <span class="toc_entry">homological algebra conventions</span></a>
+  <a href="sect0001.html"><span class="toc_ref">1</span> <span class="toc_entry">Condensed formalism</span></a>
   <span class="expand-toc">▼</span>
   <ul class="sub-toc-1 active">
      <li class="">
-  <a href="sect0001.html#a0000000006"><span class="toc_ref">1.1</span> <span class="toc_entry">My proposal</span></a>
- </li>
-<li class="">
-  <a href="sect0001.html#a0000000007"><span class="toc_ref">1.2</span> <span class="toc_entry">To avoid confusion</span></a>
+  <a href="sect0001.html#a0000000004"><span class="toc_ref">1.1</span> <span class="toc_entry">Condensed Sets</span></a>
   <span class="expand-toc">▶</span>
   <ul class="sub-toc-2">
      <li class="">
-  <a href="sect0001.html#a0000000008"><span class="toc_ref">1.2.1</span> <span class="toc_entry">just a test of subsection</span></a>
+  <a href="sect0001.html#a0000000005"><span class="toc_ref">1.1.1</span> <span class="toc_entry">Profinite sets</span></a>
  </li>
 
   </ul>
@@ -53,27 +50,7 @@
   </ul>
  </li>
 <li class="">
-  <a href="sect0002.html"><span class="toc_ref">2</span> <span class="toc_entry">test some references</span></a>
-  <span class="expand-toc">▶</span>
-  <ul class="sub-toc-1">
-     <li class="">
-  <a href="sect0002.html#a0000000009"><span class="toc_ref">2.1</span> <span class="toc_entry">Videos</span></a>
- </li>
-
-  </ul>
- </li>
-<li class="">
-  <a href="sect0003.html"><span class="toc_ref">3</span> <span class="toc_entry">definition</span></a>
-  <span class="expand-toc">▶</span>
-  <ul class="sub-toc-1">
-     <li class="">
-  <a href="sect0003.html#a0000000010"><span class="toc_ref">3.1</span> <span class="toc_entry">test the dependency graph</span></a>
- </li>
-
-  </ul>
- </li>
-<li class="">
-  <a href="sect0004.html"><span class="toc_ref">4</span> <span class="toc_entry">Bibliography</span></a>
+  <a href="sect0002.html"><span class="toc_ref">2</span> <span class="toc_entry">Bibliography</span></a>
  </li>
 <li ><a href="dep_graph_document.html">Dependency graph</a></li>
 </ul>
@@ -84,12 +61,221 @@
 
 
 <div class="main-text">
-<h1 id="a0000000002">1 homological algebra conventions</h1>
-<h1 id="a0000000006">1.1 My proposal</h1>
-<p> My preference would be calling any differential \(\mathbb {Z}\)-graded object by chain complex. Chain complex can be indexed by either homological or cohomological indices, with the convention that homological indices appear on the lower right corner and cohomological indices appear on the upper right corner. Instead of above and below, always say left and right with the convention that differentials point to the right. </p>
-<h1 id="a0000000007">1.2 To avoid confusion</h1>
-<p> always say if an index is homological or cohoimological if it’s not absolutely clear. </p>
-<h2 id="a0000000008">1.2.1 just a test of subsection</h2>
+<h1 id="a0000000002">1 Condensed formalism</h1>
+<h1 id="a0000000004">1.1 Condensed Sets</h1>
+<h2 id="a0000000005">1.1.1 Profinite sets</h2>
+<p>Warning: profinite set is redefined here. Classical profinite sets will be called heavy profinite sets. </p>
+<p>Condensed sets are designed to capture convergence. Profinite sets are the building blocks. They serve as blueprints for different convergence procedures. Loosely a profinite set is a formal \( \mathbb {N}^{\mathrm{op}}\)-indexed limit of finite sets. The formal limit is made precise by the free cocompletion. </p>
+<div class="definition_thmwrapper theorem-style-definition" id="a0000000006">
+  <div class="definition_thmheading">
+    <span class="definition_thmcaption">
+    Definition
+    </span>
+    <span class="definition_thmlabel">1</span>
+    <div class="thm_header_extras">
+
+        </div>
+    <div class="thm_header_hidden_extras">
+
+    <a class="icon proof" href="sect0001.html#a0000000006">#</a>
+    
+    
+    
+        </div>
+  </div>
+  <div class="definition_thmcontent">
+  <p>The category of profinite sets, denoted by \( \mathrm{Pro}_{\mathbb {N}}(\mathsf{Fin})\), is defined to be the strictly full subcategory of \( \operatorname{PSh}(\mathsf{Fin} ^{\mathrm{op}})^{\mathrm{op}}\) spanned by the \( \mathbb {N}^{\mathrm{op}}\)-indexed colimits of objects in the Yoneda image, where \( \mathsf{Fin} \) is the category of finite sets. </p>
+<p>A profinite set is called finite if it is isomorphic to an object in the Yoneda image. </p>
+
+  </div>
+</div>
+<div class="proposition_thmwrapper theorem-style-plain" id="a0000000007">
+  <div class="proposition_thmheading">
+    <span class="proposition_thmcaption">
+    Proposition
+    </span>
+    <span class="proposition_thmlabel">2</span>
+    <div class="thm_header_extras">
+
+        </div>
+    <div class="thm_header_hidden_extras">
+
+    <a class="icon proof" href="sect0001.html#a0000000007">#</a>
+    
+    
+    
+        </div>
+  </div>
+  <div class="proposition_thmcontent">
+  <p>The category \( \mathrm{Pro}_{\mathbb {N}}(\mathsf{Fin})\) is closed under countable limits and finite coproducts in \( \operatorname{PSh}(\mathsf{Fin} ^{\mathrm{op}})^{\mathrm{op}}\). In particular, \( \mathrm{Pro}_{\mathbb {N}}(\mathsf{Fin})\) has countable limits and finite coproducts. </p>
+
+  </div>
+</div>
+<div class="proof_wrapper" id="a0000000008">
+  <div class="proof_heading">
+    <span class="proof_caption">
+    Proof
+    </span>
+    <span class="expand-proof">▶</span>
+  </div>
+  <div class="proof_content">
+  
+  </div>
+</div>
+<p>A profinite set is to be thought of as an \( \mathbb {N}^{\mathrm{op}}\)-indexed limit diagram of finite sets. If \( \mathcal{C} \) is a category with countable limits, then a fucntor \( \mathsf{Fin}\to \mathcal{C} \) can be extended to a functor \( \mathrm{Pro}_{\mathbb {N}}(\mathsf{Fin})\to \mathcal{C} \) by taking the limit of the diagram in \( \mathcal{C} \). The precise formulation for \( \mathcal{C} = \mathsf{Set} \) is: </p>
+<div class="lemma_thmwrapper theorem-style-plain" id="profi::forgetful-to-set">
+  <div class="lemma_thmheading">
+    <span class="lemma_thmcaption">
+    Lemma
+    </span>
+    <span class="lemma_thmlabel">3</span>
+    <div class="thm_header_extras">
+
+        </div>
+    <div class="thm_header_hidden_extras">
+
+    <a class="icon proof" href="sect0001.html#profi::forgetful-to-set">#</a>
+    
+    
+    
+        </div>
+  </div>
+  <div class="lemma_thmcontent">
+  <p>There is a unique faithful functor \( \mathrm{Pro}_{\mathbb {N}}(\mathsf{Fin})\to \mathsf{Set} \) that commutes with countable limits and sends a finite profinite set \( S \) to the set \( S \).  </p>
+
+  </div>
+</div>
+<div class="proof_wrapper" id="a0000000009">
+  <div class="proof_heading">
+    <span class="proof_caption">
+    Proof
+    </span>
+    <span class="expand-proof">▶</span>
+  </div>
+  <div class="proof_content">
+  
+  </div>
+</div>
+<div class="definition_thmwrapper theorem-style-definition" id="a0000000010">
+  <div class="definition_thmheading">
+    <span class="definition_thmcaption">
+    Definition
+    </span>
+    <span class="definition_thmlabel">4</span>
+    <div class="thm_header_extras">
+
+        </div>
+    <div class="thm_header_hidden_extras">
+
+    <a class="icon proof" href="sect0001.html#a0000000010">#</a>
+    
+    
+    
+        </div>
+  </div>
+  <div class="definition_thmcontent">
+  <p>The functor \( \mathrm{Pro}_{\mathbb {N}}(\mathsf{Fin})\to \mathsf{Set} \) constructed in the Lemma <a href="sect0001.html#profi::forgetful-to-set">3</a> is called the forgetful functor and denoted by \( \mathsf{Set}(-) \). </p>
+
+  </div>
+</div>
+<div class="proposition_thmwrapper theorem-style-plain" id="a0000000011">
+  <div class="proposition_thmheading">
+    <span class="proposition_thmcaption">
+    Proposition
+    </span>
+    <span class="proposition_thmlabel">5</span>
+    <div class="thm_header_extras">
+
+        </div>
+    <div class="thm_header_hidden_extras">
+
+    <a class="icon proof" href="sect0001.html#a0000000011">#</a>
+    
+    
+    
+        </div>
+  </div>
+  <div class="proposition_thmcontent">
+  <p>Let \( f: X\to Y \) be a morphism in \( \mathrm{Pro}_{\mathbb {N}}(\mathsf{Fin})\). The followings are equivalent: </p>
+<ol class="enumerate">
+  <li><p>\( \mathsf{Set}(f): \mathsf{Set}(X)\to \mathsf{Set}(Y) \) is surjective; </p>
+</li>
+  <li><p>there is a profinite set \( X _{1} \) and two morphisms \( d _{0}, d _{1}: X _{1}\to X \) such that \( Y \) is the coequalizer of \( d _{0}, d _{1} \); </p>
+</li>
+  <li><p>\( Y \) is the coequalizer of the two projection morphisms \( X \times _{Y} X \to X \). </p>
+</li>
+</ol>
+
+
+  </div>
+</div>
+<div class="definition_thmwrapper theorem-style-definition" id="a0000000012">
+  <div class="definition_thmheading">
+    <span class="definition_thmcaption">
+    Definition
+    </span>
+    <span class="definition_thmlabel">6</span>
+    <div class="thm_header_extras">
+
+        </div>
+    <div class="thm_header_hidden_extras">
+
+    <a class="icon proof" href="sect0001.html#a0000000012">#</a>
+    
+    
+    
+        </div>
+  </div>
+  <div class="definition_thmcontent">
+  <p>A morphism \( f:X\to Y \) in \( \mathrm{Pro}_{\mathbb {N}}(\mathsf{Fin})\) is called surjective if the equivalent conditions in Proposition <a href="sect0001.html#profi::surj::conditions">3</a> hold. </p>
+
+  </div>
+</div>
+<div class="proposition_thmwrapper theorem-style-plain" id="a0000000013">
+  <div class="proposition_thmheading">
+    <span class="proposition_thmcaption">
+    Proposition
+    </span>
+    <span class="proposition_thmlabel">7</span>
+    <div class="thm_header_extras">
+
+        </div>
+    <div class="thm_header_hidden_extras">
+
+    <a class="icon proof" href="sect0001.html#a0000000013">#</a>
+    
+    
+    
+        </div>
+  </div>
+  <div class="proposition_thmcontent">
+  <p>Let \( \{ X _{i}\}  \) be an \( \mathbb {N} ^{\mathrm{op}}\)-index diagram of profinite sets where all transition maps \( X _{j}\to X _{i},j\geq i \) are surjective. Then the structural maps \( \lim _{i} X _{i} \to X _{i} \) are surjective. </p>
+
+  </div>
+</div>
+<div class="definition_thmwrapper theorem-style-definition" id="a0000000014">
+  <div class="definition_thmheading">
+    <span class="definition_thmcaption">
+    Definition
+    </span>
+    <span class="definition_thmlabel">8</span>
+    <div class="thm_header_extras">
+
+        </div>
+    <div class="thm_header_hidden_extras">
+
+    <a class="icon proof" href="sect0001.html#a0000000014">#</a>
+    
+    
+    
+        </div>
+  </div>
+  <div class="definition_thmcontent">
+  <p>A morphism \( f: X\to Y \) of profinite sets is called a closed immersion if the diagonal \( X\to X\times _{Y} X \) is an isomorphism. If \( f:X\to Y \) is a closed immersion, then \( X \) is said to be a closed sub-(profinite set) by \( f \), or just a closed sub-(profinite set) if the morphism \( f \) is clear from context. </p>
+
+  </div>
+</div>
+
 
 </div> <!--main-text -->
 </div> <!-- content-wrapper -->
@@ -105,7 +291,7 @@
 </a>
   <a href="index.html" title="Analytic Stacks Project"><svg  class="icon icon-arrow-up "><use xlink:href="symbol-defs.svg#icon-arrow-up"></use></svg>
 </a>
-  <a href="sect0002.html" title="test some references"><svg  class="icon icon-arrow-right "><use xlink:href="symbol-defs.svg#icon-arrow-right"></use></svg>
+  <a href="sect0002.html" title="Bibliography"><svg  class="icon icon-arrow-right "><use xlink:href="symbol-defs.svg#icon-arrow-right"></use></svg>
 </a>
 </nav>
 

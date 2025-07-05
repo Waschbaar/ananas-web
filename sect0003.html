@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>
+  MathJax = { 
+    tex: {
+		    inlineMath: [['$','$'], ['\\(','\\)']],
+	} }
+</script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+</script>
+<meta name="generator" content="plasTeX" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>definition</title>
+<link rel="next" href="sect0004.html" title="Bibliography" />
+<link rel="prev" href="sect0002.html" title="test some references" />
+<link rel="up" href="index.html" title="Analytic Stacks Project" />
+<link rel="stylesheet" href="styles/theme-white.css" />
+<link rel="stylesheet" href="styles/amsthm.css" />
+<link rel="stylesheet" href="styles/showmore.css" />
+<link rel="stylesheet" href="styles/blueprint.css" />
+<link rel="stylesheet" href="styles/extra_styles.css" />
+</head>
+
+<body>
+<header>
+<svg  id="toc-toggle" class="icon icon-list-numbered "><use xlink:href="symbol-defs.svg#icon-list-numbered"></use></svg>
+<h1 id="doc_title"><a href="index.html">Analytic Stacks Project</a></h1>
+</header>
+
+<div class="wrapper">
+<nav class="toc">
+<ul class="sub-toc-0">
+<li class="">
+  <a href="sect0001.html"><span class="toc_ref">1</span> <span class="toc_entry">homological algebra conventions</span></a>
+  <span class="expand-toc">▶</span>
+  <ul class="sub-toc-1">
+     <li class="">
+  <a href="sect0001.html#a0000000006"><span class="toc_ref">1.1</span> <span class="toc_entry">My proposal</span></a>
+ </li>
+<li class="">
+  <a href="sect0001.html#a0000000007"><span class="toc_ref">1.2</span> <span class="toc_entry">To avoid confusion</span></a>
+  <span class="expand-toc">▶</span>
+  <ul class="sub-toc-2">
+     <li class="">
+  <a href="sect0001.html#a0000000008"><span class="toc_ref">1.2.1</span> <span class="toc_entry">just a test of subsection</span></a>
+ </li>
+
+  </ul>
+ </li>
+
+  </ul>
+ </li>
+<li class="">
+  <a href="sect0002.html"><span class="toc_ref">2</span> <span class="toc_entry">test some references</span></a>
+  <span class="expand-toc">▶</span>
+  <ul class="sub-toc-1">
+     <li class="">
+  <a href="sect0002.html#a0000000009"><span class="toc_ref">2.1</span> <span class="toc_entry">Videos</span></a>
+ </li>
+
+  </ul>
+ </li>
+<li class=" active current">
+  <a href="sect0003.html"><span class="toc_ref">3</span> <span class="toc_entry">definition</span></a>
+  <span class="expand-toc">▼</span>
+  <ul class="sub-toc-1 active">
+     <li class="">
+  <a href="sect0003.html#a0000000010"><span class="toc_ref">3.1</span> <span class="toc_entry">test the dependency graph</span></a>
+ </li>
+
+  </ul>
+ </li>
+<li class="">
+  <a href="sect0004.html"><span class="toc_ref">4</span> <span class="toc_entry">Bibliography</span></a>
+ </li>
+<li ><a href="dep_graph_document.html">Dependency graph</a></li>
+</ul>
+</nav>
+
+<div class="content">
+<div class="content-wrapper">
+
+
+<div class="main-text">
+<h1 id="a0000000004">3 definition</h1>
+<p>See if the definition works. </p>
+<div class="definition_thmwrapper theorem-style-definition" id="affine::def::with_animated_rings">
+  <div class="definition_thmheading">
+    <span class="definition_thmcaption">
+    Definition
+    </span>
+    <span class="definition_thmlabel">1</span>
+    <div class="thm_header_extras">
+
+        </div>
+    <div class="thm_header_hidden_extras">
+
+    <a class="icon proof" href="sect0003.html#affine::def::with_animated_rings">#</a>
+    
+    
+    
+        </div>
+  </div>
+  <div class="definition_thmcontent">
+  <p> A <em>pre-analytic animated ring</em> \( A \) is a pair \( (A ^{\triangleright }, \mathcal{D}(A)) \) where \( A ^{\triangleright } \) is a condensed animated ring and \( \mathcal{D}(A) \) a full subcategory of \( \mathcal{D}(A ^{\triangleright }) \) satisfying the following conditions: </p>
+<ol class="enumerate">
+  <li><p>The inclusion functor \( \mathcal{D}(A)\to \mathcal{D}(A ^{\triangleright }) \) has a left adjoint, which we denote by \( -\otimes ^{L}_{A ^{\triangleright }} A \), and a right adjoint, which we denote by \( R\underline{Hom}_{A ^{\triangleright }}(A, -) \); </p>
+</li>
+  <li><p>If \( M,N \) are some objects of \( \mathcal{D}(A ^{\triangleright }) \) such that \( N \) is in \(\mathcal{D}(A) \), then \( R\underline{Hom}_{A ^{\triangleright }} (M, N) \) lies in \( \mathcal{D}(A) \); </p>
+</li>
+  <li><p>The functor \( -\otimes ^{L}_{A ^{\triangleright }} A \), composed with the inclusion, takes \( \mathcal{D}^{\leq 0}(A ^{\triangleright }) \) to \( \mathcal{D}^{\leq 0}(A ^{\triangleright }) \); </p>
+</li>
+</ol>
+<p> A pre-analytic animated ring \( (A ^{\triangleright }, \mathcal{D}(A)) \) is called an <em>analytic animated ring</em> if the object \( A ^{\triangleright } \) lies in \( \mathcal{D}(A) \). </p>
+<p>A morphism of (pre-)analytic animated rings \( A\to B \) is a morphism \( f: A ^{\triangleright }\to B ^{\triangleright } \) of condensed animated rings such that when \( M\in \mathcal{D}(B ^{\triangleright }) \) lies in \( \mathcal{D}(B) \), the restriction of scalars \( M \in D (A ^{\triangleright }) \) lies in \( \mathcal{D}(A) \). </p>
+
+  </div>
+</div>
+<h1 id="a0000000010">3.1 test the dependency graph</h1>
+<p> This is a remark but let’s pretent that it’s a lemma. </p>
+<div class="lemma_thmwrapper theorem-style-plain" id="affine::def::compare_with_videos">
+  <div class="lemma_thmheading">
+    <span class="lemma_thmcaption">
+    Lemma
+    </span>
+    <span class="lemma_thmlabel">2</span>
+    <div class="thm_header_extras">
+
+        </div>
+    <div class="thm_header_hidden_extras">
+
+    <a class="icon proof" href="sect0003.html#affine::def::compare_with_videos">#</a>
+    
+    
+    <button class="modal"><svg  class="icon icon-mindmap "><use xlink:href="symbol-defs.svg#icon-mindmap"></use></svg>
+</button>
+        <div class="modal-container">
+      <div class="modal-content">
+        <header>
+          <h1>Uses</h1>
+          <button class="closebtn"><svg  class="icon icon-cross "><use xlink:href="symbol-defs.svg#icon-cross"></use></svg>
+</button>
+        </header>
+        
+        <ul class="uses">
+          
+          <li><a href="sect0003.html#affine::def::with_animated_rings">Definition 1</a></li>
+          
+        </ul>
+    
+      </div>
+    </div>
+
+    
+    
+        </div>
+  </div>
+  <div class="lemma_thmcontent">
+  <p>  Instead of requiring the inclusion functor to have both left and right adjoints, Clausen and Scholze require it to commute with all limits and colimits. The two are equivalent in view of the reflection principle, which is proved in <span class="cite">
+	[
+	<a href="sect0004.html#adamek_reflections_1989" >AR</a>
+	]
+</span> for ordinary categories and in <span class="cite">
+	[
+	<a href="sect0004.html#ragimov_infty-categorical_2022" >RS</a>
+	]
+</span> for \( \infty \)-categories. </p>
+<p>Indeed, when the subcategory \( \mathcal{D}(A) \) is closed under arbitrary limits and colimits, the reflection principle implies that the inclusion functor \( \mathcal{D}(A)\to \mathcal{D}(A ^{\triangleright }) \) has a left adjoint and that the subcategory \( \mathcal{D}(A) \) is presentable. Then the adjoint functor theorem between presentable \( \infty \)-categories implies the existence of the right adjoint. Conversely, if the inclusion functor has both left and right adjoints, then the subcategory is presentable as a localization of a presentable \( \infty \)-category. Then it has all limits and colimits, which are taken to limits and colimits in \( \mathcal{D}(A) \) since the inclusion functor is both a left and a right adjoint. </p>
+<p>The definition of Clausen and Scholze is certainly more natural. However I decide to bake the adjoints into the definition for the peace of mind even though I failed to avoid invoking the reflection principle (and the adjoint functor theorem) in the sequel. </p>
+
+  </div>
+</div>
+
+
+</div> <!--main-text -->
+</div> <!-- content-wrapper -->
+</div> <!-- content -->
+</div> <!-- wrapper -->
+
+<nav class="prev_up_next">
+  <svg  id="showmore-minus" class="icon icon-eye-minus showmore"><use xlink:href="symbol-defs.svg#icon-eye-minus"></use></svg>
+
+  <svg  id="showmore-plus" class="icon icon-eye-plus showmore"><use xlink:href="symbol-defs.svg#icon-eye-plus"></use></svg>
+
+  <a href="sect0002.html" title="test some references"><svg  class="icon icon-arrow-left "><use xlink:href="symbol-defs.svg#icon-arrow-left"></use></svg>
+</a>
+  <a href="index.html" title="Analytic Stacks Project"><svg  class="icon icon-arrow-up "><use xlink:href="symbol-defs.svg#icon-arrow-up"></use></svg>
+</a>
+  <a href="sect0004.html" title="Bibliography"><svg  class="icon icon-arrow-right "><use xlink:href="symbol-defs.svg#icon-arrow-right"></use></svg>
+</a>
+</nav>
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/plastex.js"></script>
+<script type="text/javascript" src="js/svgxuse.js"></script>
+<script type="text/javascript" src="js/js.cookie.min.js"></script>
+<script type="text/javascript" src="js/showmore.js"></script>
+</body>
+</html>

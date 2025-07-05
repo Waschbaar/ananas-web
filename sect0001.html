@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>
+  MathJax = { 
+    tex: {
+		    inlineMath: [['$','$'], ['\\(','\\)']],
+	} }
+</script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+</script>
+<meta name="generator" content="plasTeX" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Condensed formalism</title>
+<link rel="next" href="sect0002.html" title="Bibliography" />
+<link rel="prev" href="index.html" title="Analytic Stacks Project" />
+<link rel="up" href="index.html" title="Analytic Stacks Project" />
+<link rel="stylesheet" href="styles/theme-white.css" />
+<link rel="stylesheet" href="styles/amsthm.css" />
+<link rel="stylesheet" href="styles/showmore.css" />
+<link rel="stylesheet" href="styles/blueprint.css" />
+<link rel="stylesheet" href="styles/extra_styles.css" />
+</head>
+
+<body>
+<header>
+<svg  id="toc-toggle" class="icon icon-list-numbered "><use xlink:href="symbol-defs.svg#icon-list-numbered"></use></svg>
+<h1 id="doc_title"><a href="index.html">Analytic Stacks Project</a></h1>
+</header>
+
+<div class="wrapper">
+<nav class="toc">
+<ul class="sub-toc-0">
+<li class=" active current">
+  <a href="sect0001.html"><span class="toc_ref">1</span> <span class="toc_entry">Condensed formalism</span></a>
+  <span class="expand-toc">▼</span>
+  <ul class="sub-toc-1 active">
+     <li class="">
+  <a href="sect0001.html#a0000000004"><span class="toc_ref">1.1</span> <span class="toc_entry">Nöbeling’s Theorem</span></a>
+ </li>
+
+  </ul>
+ </li>
+<li class="">
+  <a href="sect0002.html"><span class="toc_ref">2</span> <span class="toc_entry">Bibliography</span></a>
+ </li>
+<li ><a href="dep_graph_document.html">Dependency graph</a></li>
+</ul>
+</nav>
+
+<div class="content">
+<div class="content-wrapper">
+
+
+<div class="main-text">
+<h1 id="a0000000002">1 Condensed formalism</h1>
+<h1 id="a0000000004">1.1 Nöbeling’s Theorem</h1>
+<div class="lemma_thmwrapper theorem-style-plain" id="condensed:profinite:inj-in-prod-f2">
+  <div class="lemma_thmheading">
+    <span class="lemma_thmcaption">
+    Lemma
+    </span>
+    <span class="lemma_thmlabel">1</span>
+    <div class="thm_header_extras">
+
+        </div>
+    <div class="thm_header_hidden_extras">
+
+    <a class="icon proof" href="sect0001.html#condensed:profinite:inj-in-prod-f2">#</a>
+    
+    <a class="icon proof" href="sect0001.html#a0000000005"><svg  class="icon icon-cogs "><use xlink:href="symbol-defs.svg#icon-cogs"></use></svg>
+</a>
+    
+    
+    
+        </div>
+  </div>
+  <div class="lemma_thmcontent">
+  <p> If \( S \) is a profinite set, then the continuous map \( S\to \prod _{f\in \mathrm{Cont}(S, \mathbb {F}_{2})} \mathbb {F}_{2} \) determined by the maps \( f\in \mathrm{Cont}(S, \mathbb {F}_{2}) \) is injective. </p>
+
+  </div>
+</div>
+<div class="proof_wrapper" id="a0000000005">
+  <div class="proof_heading">
+    <span class="proof_caption">
+    Proof
+    </span>
+    <span class="expand-proof">▶</span>
+  </div>
+  <div class="proof_content">
+  <p>Suppose that \( x, y\in S \) are distinct points. Since \( S \) is Hausdorff, there is an open neighbourhood \( U \) of \( x \) that does not contain \( y \). But \( S \) is also totally disconnected, so \( U \) contains a clopen neighbourhood \( V \) of \( x \) that does not contain \( y \). The map \( g: S\to \mathbb {F}_{2} \) sending \( V \) to \( 0 \) and \( S\backslash V \) to \( 1 \) is a continuous map that separates \( x \) and \( y \). Thus the image of \( x, y \) in \( \prod _{f\in \mathrm{Cont}(S, \mathbb {F}_{2})} \mathbb {F}_{2} \) has different values at coordinate \( g \). </p>
+
+  </div>
+</div>
+<div class="lemma_thmwrapper theorem-style-plain" id="condensed:profinite:extend-loc-const-from-closed">
+  <div class="lemma_thmheading">
+    <span class="lemma_thmcaption">
+    Lemma
+    </span>
+    <span class="lemma_thmlabel">2</span>
+    <div class="thm_header_extras">
+
+        </div>
+    <div class="thm_header_hidden_extras">
+
+    <a class="icon proof" href="sect0001.html#condensed:profinite:extend-loc-const-from-closed">#</a>
+    
+    <a class="icon proof" href="sect0001.html#a0000000006"><svg  class="icon icon-cogs "><use xlink:href="symbol-defs.svg#icon-cogs"></use></svg>
+</a>
+    
+    
+    
+        </div>
+  </div>
+  <div class="lemma_thmcontent">
+  <p> Suppose that \( S \) is a profinite set, \( T\subset S \) a closed subset and \( M \) a discrete topological space. Then the map \( \mathrm{Cont}(S, M)\to \mathrm{Cont}(T, M) \) given by precomposition with the inclusion map is surjective. </p>
+
+  </div>
+</div>
+<div class="proof_wrapper" id="a0000000006">
+  <div class="proof_heading">
+    <span class="proof_caption">
+    Proof
+    </span>
+    <span class="expand-proof">▶</span>
+  </div>
+  <div class="proof_content">
+  <p>Fix a continuous map \( f: T\to M \). Since \( T \) is compact and \( M \) is discrete, the image \( f (T)\subset M \) is finite. Let \( T _{1}, \ldots , T _{n} \) be a partition of \( T \) such that \( f \) is constant on each of \( T _{i} \). Each of \( T _{i} \) is closed in \( T \) and thus closed in \( S \). Applying Lemma ?? \( n \)-times gives pairwise disjoint clopen subsets \( W _{1},\ldots , W _{n} \) of \( S \) such that \( T _{i}\subset W _{i} \) for each \( i \). Define \( \tilde{f} \) as follows: if \( x\in W _{i} \) then \( \tilde{f}(x) = f (y) \) for some \( y\in T _{i} \); if \( x \) does not belong to any \( W _{i} \) then \( \tilde{f}(x) = f (y) \) for some \( y \in T _{1} \). As every \( W _{i} \) is clopen, \( \tilde{f} \) is a continuous map from \( S \) to \( M \). By construction \( \tilde{f} \) restricts to \( f \) on \( T \). </p>
+
+  </div>
+</div>
+<div class="theorem_thmwrapper theorem-style-plain" id="profinite:noebeling">
+  <div class="theorem_thmheading">
+    <span class="theorem_thmcaption">
+    Theorem
+    </span>
+    <span class="theorem_thmlabel">3</span>
+    <div class="thm_header_extras">
+
+        </div>
+    <div class="thm_header_hidden_extras">
+
+    <a class="icon proof" href="sect0001.html#profinite:noebeling">#</a>
+    
+    <a class="icon proof" href="sect0001.html#a0000000007"><svg  class="icon icon-cogs "><use xlink:href="symbol-defs.svg#icon-cogs"></use></svg>
+</a>
+    
+    
+    
+        </div>
+  </div>
+  <div class="theorem_thmcontent">
+  <p> If \( S \) is a profinite set, then the abelian group \( \mathrm{Cont}(S, \mathbb {Z}) \) is free. </p>
+
+  </div>
+</div>
+<div class="proof_wrapper" id="a0000000007">
+  <div class="proof_heading">
+    <span class="proof_caption">
+    Proof
+    </span>
+    <span class="expand-proof">▶</span>
+  </div>
+  <div class="proof_content">
+  <p>In the proof the sets \( \mathrm{Cont}(-, \mathbb {Z}) \) will be equipped with the ring structures of pointwise ring operations. Ordinals refer to the von Neumann ordinals. In particular the elements of an ordinal are (exactly instead of up to bijection) the smaller ordinals. The notation \( \mathrm{Cont}(-, \{ 0, 1\} ) \) is used to emphasize that the sets \( \mathrm{Cont}(-, \mathbb {F}_{2}) \) are not considered as abelian groups here. </p>
+<p><b class="bfseries">Step 1: Construct the candidate for a basis.</b> Suppose that \( \lambda \) is an ordinal and \( T \) is a non-empty closed subspace of the profinite set \( \prod _{i\in \lambda } \{ 0, 1\}  \). For all ordinal \( \mu {\lt} \lambda \) denote by \( e _{\lambda , T, \mu } \) the continuous map \( T\to \mathbb {Z} \) the composition of the inclusion \( T\to \prod _{i\in \lambda } \{ 0, 1\}  \), the projection \( \prod _{i\in \lambda } \{ 0, 1\}  \to \{ 0, 1\}  \) at coordinate \( \mu \) and the inclusion \( \{ 0, 1\} \to \mathbb {Z} \). The map \( e _{\lambda , T, \mu } \) is an idempotent in the ring \( \mathrm{Cont}(T, \mathbb {Z}) \). </p>
+<p>Let \( \mathcal{S}(\lambda ) \) denote the set of finite sequences of ordinals of the form \( \lambda {\gt} \mu _{1} {\gt} \mu _{2} {\gt} \cdots {\gt} \mu _{r} \). The case \( r = 0 \) is also allowed. The set \( \mathcal{S}(\lambda ) \) is ordered lexicographically. More precisely, a sequence \( (\mu _{1}, \ldots , \mu _{r}) \) is defined to be greater than another sequence \( (\mu ' _{1}, \ldots , \mu '_{r'}) \) if and only if either there is a number \( 1\leq i\leq \min \{ r, r'\} \) such that \( \mu _{j} = \mu '_{j} \) for all \( j {\lt} i \) and \( \mu _{i} {\gt} \mu '_{i} \), or \( r{\gt}r' \) and \( \mu _{j} = \mu '_{j} \) for all \( 1\leq j\leq r' \). Observe that for \( \mu \leq \lambda \), \( \mathcal{S}(\mu )\subset \mathcal{S}(\lambda ) \). Moreover, if \( s\in \mathcal{S}(\lambda ) \backslash \mathcal{S}(\mu ) \) and \( s'\in \mathcal{S}(\mu ) \), then \( s {\gt} s' \). Thus if \( s\in \mathcal{S}(\mu ) \), then the sets \( \{ s'\in \mathcal{S}(\lambda ), s' {\lt} s\}  \) and \( \{ s'\in \mathcal{S}(\mu ), s'{\lt}s\}  \) are equal. </p>
+<p>For every sequence \( (\mu _{1}, \ldots , \mu _{r})\in \mathcal{S}(\lambda ) \), define \( E _{\lambda , T, (\mu _{1}, \ldots , \mu _{r})} \) to be the product \( e _{\lambda , T, \mu _{1}}\cdots e _{\lambda , T, \mu _{r}} \) in \( \mathrm{Cont}(T, \mathbb {Z}) \). If \( r = 0 \) then \( E _{\lambda , T, ()} \) is defined to be \( 1 \). Let \( \mathcal{S}'(\lambda , T) \) be the subset of \( \mathcal{S}(\lambda ) \) consisting of sequences \( (\mu _{1}, \ldots , \mu _{r}) \) that satisfies the following condition: the element \( E _{\lambda , T, (\mu _{1}, \ldots , \mu _{r})} \) does not lie in the \( \mathbb {Z} \)-linear span of the set \( \{ E _{\lambda , T, s}\} _{s\in \mathcal{S}(\lambda ), s {\lt} (\mu _{1}, \ldots , \mu _{r})} \). Define the set \( \mathscr {E}_{\lambda , T} \) to be \( \{ E _{\lambda , T, s} \mid s\in \mathcal{S}'(\lambda , T)\}  \). By construction the set \( \mathscr {E}_{\lambda , T} \) is in bijection with \( \mathcal{S}'(\lambda , T) \). </p>
+<p>Let \( \mu \leq \lambda \) be an ordinal and \( T _{\mu } \) be the image of \( T \) under the projection \( \prod _{\nu {\lt} \lambda } \{ 0, 1\}  \to \prod _{\nu {\lt} \mu } \{ 0, 1\}  \). Composition with the surjection \( T\to T _{\mu } \) is an injective ring homomorphism \( \mathrm{Cont}(T _{\mu }, \mathbb {Z})\to \mathrm{Cont}(T, \mathbb {Z}) \). If \( \nu \leq \mu \), then the image of \( e _{\mu , T _{\mu }, \nu } \) in \( \mathrm{Cont}(T, \mathbb {Z}) \) is \( e _{\lambda , T _{\mu }, \nu } \), which is equal to \( e _{\lambda , T, \nu } \) since the composition of \( T\to \prod _{\lambda } \{ 0, 1\}  \) and the projection to coordinate \( \nu \) factors through the composition of \( T _{\mu } \to \prod _{\mu } \{ 0, 1\}  \) and the projection to coordinate \( \nu \). Therefore for all \( s\in \mathcal{S}(\mu ) \), the image of \( E _{\mu , T _{\mu }, s} \) in \( \mathrm{Cont}(T, \mathbb {Z}) \) is \( E _{\lambda , T, s} \). Moreover, for any \( s\in \mathcal{S}(\mu ) \), the equality \( \{ s'\in \mathcal{S}(\lambda ), s'{\lt}s\}  = \{ s'\in \mathcal{S}(\mu ), s'{\lt}s\}  \) together with the injectivity of \( \mathrm{Cont}(T _{\mu }, \mathbb {Z})\to \mathrm{Cont}(T, \mathbb {Z}) \) implies that \( s\in \mathcal{S}'(\mu , T _{\mu }) \) if and only if \( s\in \mathcal{S}'(\lambda , T) \). In particular, the image of \( \mathscr {E}_{\mu , T _{\mu }} \) in \( \mathrm{Cont}(T, \mathbb {Z}) \) is a subset of \( \mathscr {E}_{\lambda , T} \). </p>
+<p><b class="bfseries">Step 2: Transfinite induction.</b> Let \( \mathscr {P}(\lambda , T) \) be the statement </p>
+<div class="centered"> \( \mathscr {E}_{\lambda , T} \) is a basis of \( \mathrm{Cont}(T, \mathbb {Z}) \). </div>
+<p> The statements \( \mathscr {P}(\lambda , T) \) are proved by the following transfinite induction on \( \lambda \). </p>
+<p><b class="bfseries">Step 2.1: Base case.</b> If \( \lambda = 0 \) then \( T \) is one point while the set \( \mathscr {E}_{0, T} \) is \( \{ 1\}  \), constituting a basis in \( \mathrm{Cont}(T, \mathbb {Z}) \simeq \mathbb {Z} \). </p>
+<p><b class="bfseries">Step 2.2: Limit case.</b> Suppose that \( \lambda \) is a limiting ordinal. The abelian group \( \mathrm{Cont}(T, \mathbb {Z}) \) is the directed union of the abelian groups \( \mathrm{Cont}(T _{\mu }, \mathbb {Z}) \) for \( \mu {\lt} \lambda \), and each of the strcutural maps \( \mathrm{Cont}(T _{\mu }, \mathbb {Z})\to \mathrm{Cont}(T, \mathbb {Z}) \) sends \( \mathscr {E}_{\mu , T _{\mu }} \) to a subset of \( \mathscr {E}_{\lambda , T} \). The induction hypothesis implies that for each \( \mu \), the set \( \mathscr {E}_{\mu , T _{\mu }} \) is a basis of \( \mathrm{Cont}(T _{\mu }, \mathbb {Z}) \). Thus \( \mathscr {E}_{\lambda , T} \) is a basis of \( \mathrm{Cont}(T, \mathbb {Z}) \). </p>
+<p><b class="bfseries">Step 2.3: Successor case.</b> Suppose that \( \lambda = \rho + 1 \) is a successor ordinal. The map \( T\to \prod _{\lambda } \{ 0, 1\} \simeq \prod _{\rho }\{ 0, 1\}  \times \{ 0, 1\}  \) factors through \( T _{\rho } \times \{ 0, 1\}  \), giving a continuous injection \( T\to T _{\rho }\times \{ 0, 1\}  \). Define \( T ^{i} \) to be set \( T\cap T _{\rho }\times \{ i\}  \) for \( i = 0, 1 \), and \( T ^{i}_{\rho } \) the respective images in \( T _{\rho } \). Observe that the maps \( T ^{i}\to T ^{i}_{\rho } \) are homeomorphisms and thus \( T \simeq T ^{0}_{\rho } \coprod T ^{1}_{\rho } \). </p>
+<p>Let \( U \) be the intersection \( T ^{0}_{\rho }\cap T ^{1}_{\rho } \). The situation can be summarized in the following diagram, where the part not including \( U \) is commutative: </p>
+<div class="centered"> <div class="tikzcd" id="a0000000008">
+    <img src="images/img-0001.svg" class="tikzcd-vector" alt="\begin{tikzcd} 
+                                                           &amp; T^{0}\coprod T^{1} \arrow[d, &#34;\simeq&#34;&#39;] \arrow[r, &#34;\simeq&#34;] &amp; T \arrow[d, two heads] \arrow[r, hook] &amp; {\prod_{\mu&lt;\lambda} \{0,1\}} \arrow[d, two heads] \\
+U \arrow[r, hook, shift right] \arrow[r, hook, shift left] &amp; T^{0}_{\rho}\coprod T^{1}_{\rho} \arrow[r, two heads]       &amp; T_{\rho} \arrow[r, hook]               &amp; {\prod_{\mu&lt;\rho} \{0,1\}}                        
+\end{tikzcd}" />
+</div>. </div>
+<p>If \( U = \emptyset \), then the map \( T\to T _{\rho } \) is an isomorphism, and \( \mathrm{Cont}(T, \mathbb {Z})\simeq \mathrm{Cont}(T _{\rho }, \mathbb {Z}) \). The set \( \mathscr {E}_{\rho , T _{\rho }} \) is a basis of \( \mathrm{Cont}(T _{\rho }, \mathbb {Z}) \) by induction hypothesis. In this case the function \( e _{\lambda , T, \rho } \) is a function on \( T _{\rho } \), and thus a linear combination of elements of the form \( e _{\rho , T _{\rho }, \mu } \) for \( \mu {\lt} \rho \). So \( \mathscr {E}_{\lambda , T} \) does not contain products involving \( e _{\lambda , T, \rho } \). But then \( \mathscr {E}_{\lambda , T} \) is equal to the image of \( \mathscr {E}_{\rho , T _{\rho }} \), and is thus a basis of \( \mathrm{Cont}(T, \mathbb {Z}) \). </p>
+<p>Suppose that \( U \) is not empty. The diagram </p>
+<div class="displaymath" id="a0000000009">
+  \begin{equation*}  U \rightrightarrows T (\simeq T ^{0}_{\rho } \coprod T ^{1}_{\rho }) \to T _{\rho } \end{equation*}
+</div>
+<p> is a colimit diagram. The functor \( \mathrm{Cont}(-, \mathbb {Z}) \) takes colimit in \( \mathsf{Top} \) to limits in \( \mathsf{Ab} \), so the sequence </p>
+<div class="displaymath" id="a0000000010">
+  \begin{equation*}  0\to \mathrm{Cont}(T _{\rho }, \mathbb {Z}) \to \mathrm{Cont}(T, \mathbb {Z})\to \mathrm{Cont}(U, \mathbb {Z}) \end{equation*}
+</div>
+<p> is exact, where the last map takes \( f:T\to \mathbb {Z} \) to \( \gamma _{1}(f) - \gamma _{0}(f) \), where \( \gamma _{i} \) is the precomposition with the map \( U \to T ^{i}_{\rho }\to T ^{0}_{\rho }\coprod T ^{1}_{\rho } \simeq T \). The last map is also surjective by Lemma <a href="sect0001.html#condensed:profinite:extend-loc-const-from-closed">2</a>. Then the sequence </p>
+<div class="displaymath" id="a0000000011">
+  \begin{equation*}  0\to \mathrm{Cont}(T _{\rho }, \mathbb {Z}) \to \mathrm{Cont}(T, \mathbb {Z})\to \mathrm{Cont}(U, \mathbb {Z})\to 0 \end{equation*}
+</div>
+<p> is exact. </p>
+<p>The set \( \mathscr {E}_{\rho , T _{\rho }} \) is a basis of \( \mathrm{Cont}(T _{\rho }, \mathbb {Z}) \) by induction hypothesis. The elements of \( \mathscr {E}_{\lambda , T} \) who are not in the image of \( \mathscr {E}_{\rho , T _{\rho }} \) are precisely those products whose first factor is \( e _{\lambda , T, \rho } \). Consider the element \( E _{\lambda , T, (\rho , \mu _{2}, \ldots , \mu _{r})} \in \mathrm{Cont}(T, \mathbb {Z})\), where \( (\rho , \mu _{2}, \ldots , \mu _{r})\in \mathcal{S}(\lambda ) \). Its image in \( \mathrm{Cont}(U, \mathbb {Z}) \) is </p>
+<div class="displaymath" id="a0000000012">
+  \begin{equation*}  \gamma _{1}(e _{\lambda , T, \rho })\gamma _{1}(e _{\lambda , T, \mu _{2}})\cdots \gamma _{1}(e _{\lambda , T, \mu _{r}}) - \gamma _{0}(e _{\lambda , T, \rho })\gamma _{0}(e _{\lambda , T, \mu _{2}})\cdots \gamma _{0}(e _{\lambda , T, \mu _{r}}). \end{equation*}
+</div>
+<p> But \( e _{\lambda , T, \rho } \) is \( 0 \) on \( T ^{0} \) and \( 1 \) on \( T ^{1} \), so \( \gamma _{0}(e _{\lambda , T, \rho }) = 0 \) and \( \gamma _{1}(e _{\lambda , T, \rho }) = 1 \). Then the image of \( E _{\lambda , T, (\rho , \mu _{2}, \ldots , \mu _{r})} \) in \( \mathrm{Cont}(U, \mathbb {Z}) \) is </p>
+<div class="displaymath" id="a0000000013">
+  \begin{equation*}  \gamma _{1}(e _{\lambda , T, \mu _{2}})\cdots \gamma _{1}(e _{\lambda , T, \mu _{r}}). \end{equation*}
+</div>
+<p> For every \( \mu {\lt} \rho \), the map </p>
+<div class="displaymath" id="a0000000014">
+  \begin{equation*}  U\to T ^{1}_{\rho }\to T ^{0}_{\rho }\coprod T ^{1}_{\rho }\to T \to \prod _{\lambda } \{ 0, 1\} \xrightarrow {\text{coordinate }\mu } \{ 0, 1\}  \end{equation*}
+</div>
+<p> and the map </p>
+<div class="displaymath" id="a0000000015">
+  \begin{equation*}  U\to T _{\rho } \to \prod _{\rho } \{ 0, 1\} \xrightarrow {\text{coordinate }\mu } \{ 0, 1\}  \end{equation*}
+</div>
+<p> are the same, and consequently \( \gamma _{1}(e _{\lambda , T, \mu }) = e _{\rho , U, \mu } \). In particular, the image of \( E _{\lambda , T, (\rho , \mu _{2}, \ldots , \mu _{r})} \) in \( \mathrm{Cont}(U, \mathbb {Z}) \) is \( E _{\rho , U, (\mu _{2}, \ldots , \mu _{r})} \). </p>
+<p>Suppose that for some \( (\rho , \mu _{2}, \ldots , \mu _{r}) \), the element \( E _{\lambda , T, (\rho , \mu _{2}, \ldots , \mu _{r})} \) is the \( \mathbb {Z} \)-linear combination </p>
+<div class="displaymath" id="a0000000016">
+  \begin{equation*}  \sum _{j=1}^{n} a _{j} E _{\lambda , T, s _{j}} \end{equation*}
+</div>
+<p> where each \( s _{j} \in \mathscr {S}(\lambda ) \) is strictly less than \( (\rho , \mu _{1}, \ldots , \mu _{r}) \). Then the linear relation persists under the map \( \mathrm{Cont}(T, \mathbb {Z})\to \mathrm{Cont}(U, \mathbb {Z}) \), while the elements \( E _{\lambda , T, s} \) where \( s \) does not start with \( \rho \) are sent to \( 0 \). Thus \( E _{\rho , U, (\mu _{2}, \ldots , \mu _{r})} \) is a linear combination of various \( E _{\rho , U, s'} \) for \( s'\in \mathcal{S}(\rho ), s' {\lt} (\mu _{2}, \ldots , \mu _{r}) \). </p>
+<p>Conversely, suppose that for some \( (\mu _{1}, \ldots , \mu _{r})\in \mathcal{S}(\rho ) \), the element \( E _{\rho , U, (\mu _{1}, \ldots , \mu _{r})} \) is a linear combination </p>
+<div class="displaymath" id="a0000000017">
+  \begin{equation*}  \sum _{j=1}^{n} a _{j} E _{\rho , U, s _{j}} \end{equation*}
+</div>
+<p> where each \( s _{j}\in \mathscr {S}(\rho ) \) is strictly less than \( (\mu _{1}, \ldots , \mu _{r}) \). Then the image of </p>
+<div class="displaymath" id="a0000000018">
+  \begin{equation*}  F = E _{\lambda , T, (\rho , \mu _{1}, \ldots , \mu _{r})} - \sum _{j=1}^{n} a _{j} E _{\lambda , T, (\rho , s _{j})} \end{equation*}
+</div>
+<p> (the notation \( (\rho , s _{j}) \) means \( (\rho , \nu _{1}, \ldots , \nu _{r'}) \) where \( s _{j} = (\nu _{1}, \ldots , \nu _{r'}) \)) in \( \mathrm{Cont}(U, \mathbb {Z}) \) is equal to \( 0 \). But then \( F \) lies in the image of \( \mathrm{Cont}(T _{\rho }, \mathbb {Z})\to \mathrm{Cont}(T, \mathbb {Z}) \) and is thus a linear combination of various \( E _{\lambda , T, s} \) where \( s'\in \mathscr {S}(\lambda ) \) does not start with \( \rho \). Such an \( s' \) is strictly less than \( (\rho , \mu _{1}, \ldots , \mu _{r}) \). Thus \( E _{\lambda , T, (\rho , \mu _{1}, \ldots , \mu _{r})} \) is a linear combination of various \( E _{\lambda , T, s} \) where \( s {\lt} (\rho , \mu _{1}, \ldots , \mu _{r}) \). </p>
+<p>Moreover, if two elements \( E _{\lambda , T, (\rho , \mu _{1},\ldots , \mu _{r})} \) and \( E _{\lambda , T, (\rho , \mu '_{1},\ldots ,\mu '_{r'})} \) with \( (\rho ,\mu _{1},\ldots ,\mu _{r}) {\gt} (\rho , \mu '_{1},\ldots ,\mu '_{r'}) \) are sent to the same image in \( \mathrm{Cont}(U, \mathbb {Z}) \), then \( E _{\lambda , T, (\rho , \mu _{1}, \ldots ,\mu _{r})} \) is a linear combination of \( E _{\lambda , R, (\rho , \mu '_{1},\ldots ,\mu '_{r'})} \) and various \( E _{\lambda , T, s} \) where \( s \) does not start with \( \rho \). Thus \( E _{\lambda , T, (\rho , \mu _{1},\ldots , \mu _{r})} \) can not be in the set \( \mathscr {E}_{\lambda , T} \). In conclusion, the set \( \mathscr {E}_{\lambda , T}\backslash \mathscr {E}_{\rho , T _{\rho }} \) is sent bijectively to the set \( \mathscr {E}_{\rho , U} \). </p>
+<p>Invoking the induction hypothesis \( \mathscr {P}(\rho , U) \), the image of \( \mathscr {E}_{\lambda , T}\backslash \mathscr {E}_{\rho , T _{\rho }} \) is a basis of \( \mathrm{Cont}(U, \mathbb {Z}) \). Then the short exact sequence splits, and \( \mathscr {E}_{\lambda , T} \) is a basis of \( \mathrm{Cont}(T, \mathbb {Z}) \). This concludes the transfinite induction. </p>
+<p><b class="bfseries">Step 3: Apply to \( S \).</b> Choose a well-ordering for the set \( \mathrm{Cont}(S, \mathbb {F}_{2}) \), which amounts to a bijection of \( \mathrm{Cont}(S, \mathbb {F}_{2}) \) with an ordinal \( \lambda \). The theorem follows from the statement \( \mathscr {P}(\lambda , S) \), thanks to Lemma <a href="sect0001.html#condensed:profinite:inj-in-prod-f2">1</a>. </p>
+
+  </div>
+</div>
+
+
+</div> <!--main-text -->
+</div> <!-- content-wrapper -->
+</div> <!-- content -->
+</div> <!-- wrapper -->
+
+<nav class="prev_up_next">
+  <svg  id="showmore-minus" class="icon icon-eye-minus showmore"><use xlink:href="symbol-defs.svg#icon-eye-minus"></use></svg>
+
+  <svg  id="showmore-plus" class="icon icon-eye-plus showmore"><use xlink:href="symbol-defs.svg#icon-eye-plus"></use></svg>
+
+  <a href="index.html" title="Analytic Stacks Project"><svg  class="icon icon-arrow-left "><use xlink:href="symbol-defs.svg#icon-arrow-left"></use></svg>
+</a>
+  <a href="index.html" title="Analytic Stacks Project"><svg  class="icon icon-arrow-up "><use xlink:href="symbol-defs.svg#icon-arrow-up"></use></svg>
+</a>
+  <a href="sect0002.html" title="Bibliography"><svg  class="icon icon-arrow-right "><use xlink:href="symbol-defs.svg#icon-arrow-right"></use></svg>
+</a>
+</nav>
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/plastex.js"></script>
+<script type="text/javascript" src="js/svgxuse.js"></script>
+<script type="text/javascript" src="js/js.cookie.min.js"></script>
+<script type="text/javascript" src="js/showmore.js"></script>
+</body>
+</html>
